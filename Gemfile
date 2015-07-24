@@ -5,3 +5,4 @@ gem 'capybara'
 gem "selenium-webdriver"
 gem "cucumber"
 gem "httparty"
+gem "rspec"
