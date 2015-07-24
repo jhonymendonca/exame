@@ -9,6 +9,7 @@ Dado(/^exista um box de busca$/) do
 end
 
 Dado(/^digite o termo "([^"]*)"$/) do |termo|
+  # Digita o termo no input.
   fill_in("suggestion-search" , :with => termo)
 end
 
@@ -37,6 +38,7 @@ Então(/^eu Clico no carrinho de compras$/) do
 end
 
 Então(/^eu vejo o produto adicionado$/) do
+  # Verifica o produto adicionado no carrinho.
   expect(find(:xpath, "//*[@id=\"main\"]/div/section/div/article/ul/li/ul/li[1]/div/div[1]/a")["href"]).to have_content @produto
 end
 

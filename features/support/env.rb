@@ -1,15 +1,19 @@
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'uri'
+require "httparty"
 
-# Tell FireFox to use proxy settings
 if ENV['http_proxy']
   Capybara.register_driver :selenium do |app|
+    # Executar no Chrome
     profile = Selenium::WebDriver::Firefox::Profile.new
+
+    # Executar no Chrome
+    # profile = Selenium::WebDriver::Chrome::Profile.new
 
     uri = URI(ENV['http_proxy'])
 
-    profile["network.proxy.type"] = 1 # manual proxy config
+    profile["network.proxy.type"] = 1
     profile["network.proxy.http"] = uri.host
     profile["network.proxy.http_port"] = uri.port
 
