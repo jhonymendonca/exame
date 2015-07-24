@@ -2,6 +2,7 @@ Pré requisitos
 ==============
 - Ruby 1.9.3
 - Bundler 1.7.12
+- Firefox 39
 
 Configuração
 ========
