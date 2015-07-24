@@ -1,4 +1,4 @@
-Pré requisitos
+Pré-requisitos
 ==============
 - Ruby 1.9.3
 - Bundler 1.7.12
