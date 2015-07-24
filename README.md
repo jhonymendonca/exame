@@ -3,7 +3,7 @@ Pré requisitos
 - Ruby 1.9.3
 - Bundler 1.7.12
 
-Execução
+Configuração
 ========
 - bundle
 
